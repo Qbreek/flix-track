@@ -1,0 +1,22 @@
+.mat-nav-list {
+  display: flex;
+  padding: 0 0;
+
+  a {
+    color: white;
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .mat-nav-list {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
