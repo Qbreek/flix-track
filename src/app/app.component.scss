@@ -1,0 +1,11 @@
+.application-wrapper {
+  padding-left: 103px;
+  padding-right: 103px;
+}
+
+@media only screen and (max-width: 1130px) {
+  .application-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
