@@ -1,0 +1,16 @@
+<!-- arrow down -->
+<button
+  mat-icon-button
+  [matMenuTriggerFor]="menu"
+  aria-label="User profile button for dropdown menu with options"
+>
+  <mat-icon>arrow_drop_down</mat-icon>
+</button>
+
+<!-- menu items -->
+<mat-menu #menu="matMenu">
+  <button mat-menu-item *ngFor="let link of userDropdownLinks">
+    <mat-icon>{{ link.icon }}</mat-icon>
+    <span>{{ link.name }}</span>
+  </button>
+</mat-menu>
